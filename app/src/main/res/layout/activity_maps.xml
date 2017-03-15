@@ -1,0 +1,83 @@
+<LinearLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:text="TextView"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center_horizontal"
+        android:id="@+id/locateTextView" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreTextView"
+        android:gravity="center_horizontal" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal"
+            android:id="@+id/currentScoreTextView" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/timerTextView"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="184dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:gravity = "center_horizontal"
+            android:id="@+id/hintButton"
+            android:onClick="onHintButtonClick"
+            android:text="" />
+        <Button
+            android:layout_width="184dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:gravity = "center_horizontal"
+            android:id="@+id/skipButton"
+            android:onClick="onSkipButtonClick"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="384dp"
+        tools:context="com.example.tinku.googlemapsdemotest1.MapsActivity"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
